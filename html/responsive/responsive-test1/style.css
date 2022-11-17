@@ -1,0 +1,97 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: crimson;
+  position: relative;
+  transition: all 2s ease;
+}
+.text-content {
+  position: absolute;
+  top: 50vh;
+  left: 10em;
+  font-size: x-small;
+}
+.text-content::before {
+  content: "576";
+}
+.text-content::after {
+  content: " бага үед (extra small) < 576px";
+}
+
+@media (min-width: 576px) {
+  body {
+    background-color: lightsalmon;
+    transition: background-color 2s ease;
+  }
+  .text-content {
+    font-size: small;
+  }
+  .text-content::before {
+    content: "576";
+  }
+  .text-content::after {
+    content: " их болон тэнцүү үед (small) => 576px";
+  }
+}
+@media (min-width: 768px) {
+  body {
+    background-color: lightseagreen;
+    transition: background-color 2s ease;
+  }
+  .text-content {
+    font-size: medium;
+  }
+  .text-content::before {
+    content: "768";
+  }
+  .text-content::after {
+    content: " их болон тэнцүү үед (medium) => 768px";
+  }
+}
+@media (min-width: 992px) {
+  body {
+    background-color: orange;
+    transition: background-color 2s ease;
+  }
+  .text-content {
+    font-size: large;
+  }
+  .text-content::before {
+    content: "992";
+  }
+  .text-content::after {
+    content: " их болон тэнцүү үед (large) => 992px";
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: blueviolet;
+    transition: background-color 2s ease;
+  }
+  .text-content {
+    font-size: x-large;
+  }
+  .text-content::before {
+    content: "1200";
+  }
+  .text-content::after {
+    content: " их болон тэнцүү үед (x-large) => 1200px";
+  }
+}
+@media (min-width: 1400px) {
+  body {
+    background-color: lightpink;
+    transition: background-color 2s ease;
+  }
+  .text-content {
+    font-size: xx-large;
+  }
+  .text-content::before {
+    content: "1400";
+  }
+  .text-content::after {
+    content: " их болон тэнцүү үед (xx-large) => 1400px";
+  }
+}

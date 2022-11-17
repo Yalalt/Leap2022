@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style1.css" />
+    <title>Fitness Club</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        Welcome to the 24x7 Fitness Club : Courts Reservation Page!!
+      </header>
+      <form action="#">
+        <div class="burtgel-box">
+          <fieldset>
+            <legend>&nbsp;&nbsp;Member Demographics&nbsp;&nbsp;</legend>
+            <div class="form-group">
+              <label for="name">Name </label>
+              <input type="text" name="name" id="name" required />
+            </div>
+            <p>Are you a Member?</p>
+            <div class="form-group">
+              <input
+                type="radio"
+                name="membership"
+                id="member"
+                value="member"
+              />
+              <label for="member"> Member</label>
+              <input
+                type="radio"
+                name="membership"
+                id="member"
+                value="non-member"
+              />
+              <label for="member"> Non-member</label>
+            </div>
+            <div class="form-group">
+              <label for="email">Email </label
+              ><input type="email" name="email" id="email" required />
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="facility">Facility</label>
+            <select name="facility" id="facility" required>
+              <option value="badminton" selected>Badminton</option>
+              <option value="gymnastics">Gymnastics</option>
+              <option value="athletics">Athletics</option>
+              <option value="archery">Archery</option>
+              <option value="table tennis">Table tennis</option>
+            </select>
+          </div>
+
+          <p>Select a reservation date and time:</p>
+          <div class="form-group">
+            <input type="date" name="date" id="date" required />
+            <input type="time" name="time" id="time" required />
+          </div>
+
+          <div class="form-group">
+            <input type="radio" name="agreement" id="agreement" required />
+            <label for="agreement">
+              I agree to the club's reservation policy</label
+            >
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

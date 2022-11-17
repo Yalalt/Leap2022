@@ -1,0 +1,47 @@
+.container {
+  max-width: 1200px;
+  height: auto;
+  margin: 10px 50px;
+}
+
+.btn {
+  width: 0;
+  height: 61px;
+}
+
+#button-1 {
+  background-color: blue;
+  border: none;
+}
+
+#button-2 {
+  background-color: forestgreen;
+  border: none;
+}
+
+.button-border-1,
+.button-border-2 {
+  cursor: pointer;
+}
+
+.button-border-1 #button-1,
+.button-border-2 #button-2 {
+  color: #fff;
+  transition: all 2s ease-in-out;
+  visibility: hidden;
+}
+
+.button-border-1:active #button-1 {
+  visibility: visible;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 2s ease-in-out;
+}
+
+.button-border-2:hover #button-2 {
+  visibility: visible;
+  width: 100%;
+
+  background-color: lightcoral;
+  transition: all 2s ease-in-out;
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form lesson day 1</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h3>Travel reservation form</h3>
+      <h4>* denotes mandatory</h4>
+      <form>
+        <div class="form-group">
+          <label for="name">Full name*:</label>
+          <input
+            class="inputs"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="First name Last name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email address*:</label>
+          <input
+            class="inputs"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Please enter email address"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="package">Select Tour Package*:</label>
+          <select class="inputs" name="tour-pack" id="package" required>
+            <option value="viet-cam-thai">Vietnam-Cambodia-Thailand</option>
+            <option value="vietnam">Vietnam</option>
+            <option value="cambodia">Cambodia</option>
+            <option value="thailand">Thailand</option>
+            <option value="laos">Laos</option>
+            <option value="turkey" selected>Turkey</option>
+            <option value="italia">Italia</option>
+            <option value="french-amstr">French-Amsterdam</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="date-arr">Arrival date*:</label>
+          <input
+            class="inputs"
+            type="date"
+            name="date"
+            id="date-arr"
+            placeholder="m/d/y"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="no-person">Number of Persons*:</label>
+          <input
+            class="inputs"
+            type="number"
+            name="persons"
+            id="no-persons"
+            placeholder="Number persons"
+            required
+          />
+        </div>
+
+        <p>What would you want to availability?*:</p>
+        <div class="form-group form-group-check">
+          <div class="checkboxs">
+            <label for="boarding">Boarding</label>
+            <input
+              type="checkbox"
+              name="boarding"
+              id="boarding"
+              value="boarding"
+              required
+            />
+          </div>
+          <div class="checkboxs">
+            <label for="fooding">Fooding</label>
+            <input
+              type="checkbox"
+              name="fooding"
+              id="fooding"
+              value="fooding"
+            />
+          </div>
+          <div class="checkboxs">
+            <label for="seeing">Sight seeing</label>
+            <input type="checkbox" name="seeing" id="seeing" value="seeing" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="discount">Discount Coupon code:</label>
+          <input
+            class="inputs"
+            type="text"
+            name="discount"
+            id="discount"
+            placeholder="Discount code here"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="term-condition">Terms and conditions*</label>
+          <div class="terms-agreement">
+            <div>
+              <input
+                type="radio"
+                name="terms-conditions"
+                id="agree"
+                placeholder="agree"
+                required
+                checked
+              />
+              <label for="agree">I agree </label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                name="terms-conditions"
+                id="disagree"
+                placeholder="disagree"
+                required
+              />
+              <label for="disagree">I disagree</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <input class="inputs" type="submit" name="name" id="name" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

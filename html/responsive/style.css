@@ -1,0 +1,62 @@
+body {
+  background: aqua;
+  margin: 0 20px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: lightcoral;
+  }
+  header {
+    display: block;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    background: lightseagreen;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  header,
+  ul {
+    display: block;
+    gap: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 5px;
+  }
+}

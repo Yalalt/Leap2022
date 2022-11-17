@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-center {
+  margin: 2rem auto;
+}
+
+.toggle-btn-border {
+  position: relative;
+  left: 100px;
+  background-color: lightgrey;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 200px;
+  height: 55px;
+}
+
+.check-box {
+  position: absolute;
+  border-radius: 30px;
+  width: 200px;
+  height: 55px;
+  background-color: lightgreen;
+  border: 2px solid gray;
+  z-index: 1;
+}
+
+.toggle-btn-circle {
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 2px 2px 1px 2px rgb(153, 152, 152);
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  z-index: 2;
+}
+
+/* input[type="checkbox"]:hover .toggle-btn-circle {
+  transition: transform 2s;
+  transform: translateY(190px);
+} */
+
+.toggle-btn-circle:hover .toggle-btn-circle {
+  transition: transform 2s;
+  transform: translateY(190px);
+  background-color: aqua;
+}
