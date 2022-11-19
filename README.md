@@ -1,2 +1,2 @@
 # Leap2022
-Leap 2022 hotolbor, this repo use for lesson
+Leap 2022 хөтөлбөрийн Aqua ангийн суралцагч.
