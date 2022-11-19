@@ -64,22 +64,42 @@
       <div class="container">
         <!-- Bairshiluud -->
         <div class="d-md-flex row-cols-md-12">
-          <div class="col-md-2">
+          <div class="col-xl-2">
             <div class="box">
               <div class="card bg-light text-dark mb-2">
-                <img
-                  src="https://source.unsplash.com/random/100x80"
-                  alt="title image"
-                  class="img-fluid"
-                />
-                <div class="card-body">
-                  <div class="lead fs-md-6">
-                    <a href="#" class="nav-link">Support Service</a>
-                    <a href="#" class="nav-link">Customer Consulting</a>
-                    <a href="#" class="nav-link">Setup Service</a>
-                    <a href="#" class="nav-link">Advanced Support</a>
+                
+                <div class="row">
+                  <div class="col-4 col-md-12">
+                      <img
+                        src="https://source.unsplash.com/random/200x200"
+                        alt="title image"
+                        class="img-sm-fluid"
+                        style="width: 100%; background-size: auto;"
+                      />
+                  </div>
+                  <div class="col-8 col-md-12">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">
+                        <a href="#" class="nav-link fs-6">Support Service</a>
+                        
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#" class="nav-link fs-6">Customer Consulting</a>
+    
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#" class="nav-link fs-6">Setup Service</a>
+    
+                      </li>
+                      <li class="list-group-item">
+                        <a href="#" class="nav-link fs-6">Advanced Support</a>
+    
+                      </li>
+                    </ul>
                   </div>
                 </div>
+                 
+                
               </div>
               <p class="p-2 fs-6 fw-lighter">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
@@ -93,16 +113,14 @@
           </div>
 
           <!-- Baruun tal -->
-          <aside class="col-md-10 ps-3">
+          <aside class="col-xl-10 ps-3">
             <div class="row">
               <!-- Right Card heseg -->
               <div class="col-sm-3">
                 <div class="card bg-light text-dark mb-2">
-                  <h6 class="card-header">
-                    Service news
-                  </h6>
+                  <h6 class="card-header">Service news</h6>
                   <img
-                    src="./images/supportService.webp"
+                    src="https://source.unsplash.com/random/200x100"
                     alt="Support service"
                     class="card-img-top d-sm-none d-md-block"
                   />
@@ -112,14 +130,18 @@
                     <p class="card-text">Lorem ipsum dolor sit amet.</p>
                   </div>
                   <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark btn-sm float-end" data-bs-toggle="modal" data-bs-target="#errormodal"
+                    <a
+                      href="#"
+                      class="btn btn-outline-dark btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#errormodal"
                       >Read more <i class="bi bi-arrow-right-circle ms-2"></i
                     ></a>
                   </div>
                 </div>
                 <div class="card bg-light text-dark mb-2">
                   <img
-                    src="https://source.unsplash.com/random/220x100"
+                    src="https://source.unsplash.com/random/200x90"
                     alt="Support service"
                     class="card-img-top img-fluid img-center rounded-top d-sm-none d-md-block"
                   />
@@ -128,7 +150,11 @@
                     <p class="card-text">Lorem ipsum dolor sit amet.</p>
                   </div>
                   <div class="card-footer">
-                    <a href="#" class="btn btn-outline-dark btn-sm float-end" data-bs-toggle="modal" data-bs-target="#newsmodal"
+                    <a
+                      href="#"
+                      class="btn btn-outline-dark btn-sm float-end"
+                      data-bs-toggle="modal"
+                      data-bs-target="#newsmodal"
                       >Read more <i class="bi bi-arrow-right-circle ms-2"></i
                     ></a>
                   </div>
@@ -138,17 +164,19 @@
               <!-- Right right main heseg -->
               <div class="col-sm-9 bg-white rounded p-3">
                 <div>
-                  <img
-                    src="https://source.unsplash.com/random/300x200"
-                    alt="News image"
-                    class="rounded float-sm-left"
-                  />
+                  <figure class="figure float-start d-lg-block">
+                    <img
+                      src="https://source.unsplash.com/random/300x200"
+                      alt="News image"
+                      class="figure-img img-fluid rounded img-thumbnail me-xl-1"
+                    />
+                  </figure>
 
-                  <h5 class="float-sm-right">
+                  <h5 class="d-lg-block text-center lh-base">
                     Invest in a more equitable, community-driven, and inclusive
-                    marketing technology
+                    marketing technology <span class="badge bg-info">new</span>
                   </h5>
-                  <p class="float-sm-right fs-6 fs-md-5 fs-lg-4">
+                  <p class="d-lg-block fs-6 fs-md-5 fs-lg-4 text-align-start px-md-3" style="text-align: justify;">
                     Our mission is to make marketing technology accessible for
                     everyone through our open-source software. We are going to
                     change the way businesses grow and deliver breakthrough
@@ -165,9 +193,22 @@
                   </p>
 
                   <!-- Description heseg -->
-                  <div class="alert alert-success alert-dismissible fs-6 fs-md-5 fs-lg-4 fw-lighter d-sm-none d-md-block fade show" role="alert">
-                    <button class="btn-close" aria-label="close" data-bs-dismiss="alert"></button>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam fuga, atque suscipit, praesentium asperiores aspernatur earum repellat voluptas perferendis ex, alias excepturi nam. Tenetur veritatis id, eos expedita obcaecati earum?</p>
+                  <div
+                    class="alert alert-success alert-dismissible fs-6 fs-md-5 fs-lg-4 fw-lighter d-sm-none d-md-block fade show"
+                    role="alert"
+                  >
+                    <button
+                      class="btn-close"
+                      aria-label="close"
+                      data-bs-dismiss="alert"
+                    ></button>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quam fuga, atque suscipit, praesentium asperiores
+                      aspernatur earum repellat voluptas perferendis ex, alias
+                      excepturi nam. Tenetur veritatis id, eos expedita
+                      obcaecati earum?
+                    </p>
                   </div>
                 </div>
               </div>
@@ -226,7 +267,6 @@
                           id="registerinfo"
                           class="form-check-input float-end"
                         />
-
                       </div>
                     </div>
                   </div>
@@ -258,9 +298,13 @@
                   <h6>Алдааны мэдээлэл</h6>
                   <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">Уучлаарай сервертэй холбогдоход асуудал гарлаа...</div>
+                <div class="modal-body">
+                  Уучлаарай сервертэй холбогдоход асуудал гарлаа...
+                </div>
                 <div class="modal-footer">
-                  <button class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    close
+                  </button>
                 </div>
               </div>
             </div>
@@ -273,14 +317,37 @@
                   <h6>Үйлчилгээний мэдээлэл</h6>
                   <button class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-                <div class="modal-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error sapiente placeat ipsum nemo officiis quisquam fugit illum minima repellat dignissimos voluptatem incidunt alias commodi itaque maxime architecto culpa numquam qui doloribus, aspernatur molestias reiciendis obcaecati perspiciatis. Deleniti itaque ullam, voluptatum reprehenderit at obcaecati tempore dolores recusandae. Excepturi aspernatur necessitatibus dolorum totam consectetur molestias omnis, nesciunt nobis doloremque architecto, fuga nam? Animi nobis amet impedit! Delectus sunt velit magnam, autem facere ea, explicabo fuga aspernatur deserunt esse, ipsa odit laborum rerum? Error, consectetur minima soluta obcaecati eius doloribus laboriosam ducimus debitis alias exercitationem qui corporis earum veniam accusantium quos incidunt fuga? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, sapiente blanditiis maiores itaque corrupti officia, error atque mollitia in, velit assumenda maxime cumque laborum nobis. Consequuntur magni sapiente obcaecati, quam officiis facilis tempora! Non a praesentium molestias cum pariatur consequuntur, rerum repellendus? Quibusdam neque magni libero cum, dolorum reiciendis repellat!...</div>
+                <div class="modal-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Error sapiente placeat ipsum nemo officiis quisquam fugit
+                  illum minima repellat dignissimos voluptatem incidunt alias
+                  commodi itaque maxime architecto culpa numquam qui doloribus,
+                  aspernatur molestias reiciendis obcaecati perspiciatis.
+                  Deleniti itaque ullam, voluptatum reprehenderit at obcaecati
+                  tempore dolores recusandae. Excepturi aspernatur
+                  necessitatibus dolorum totam consectetur molestias omnis,
+                  nesciunt nobis doloremque architecto, fuga nam? Animi nobis
+                  amet impedit! Delectus sunt velit magnam, autem facere ea,
+                  explicabo fuga aspernatur deserunt esse, ipsa odit laborum
+                  rerum? Error, consectetur minima soluta obcaecati eius
+                  doloribus laboriosam ducimus debitis alias exercitationem qui
+                  corporis earum veniam accusantium quos incidunt fuga? Lorem,
+                  ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                  sapiente blanditiis maiores itaque corrupti officia, error
+                  atque mollitia in, velit assumenda maxime cumque laborum
+                  nobis. Consequuntur magni sapiente obcaecati, quam officiis
+                  facilis tempora! Non a praesentium molestias cum pariatur
+                  consequuntur, rerum repellendus? Quibusdam neque magni libero
+                  cum, dolorum reiciendis repellat!...
+                </div>
                 <div class="modal-footer">
-                  <button class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                  <button class="btn btn-secondary" data-bs-dismiss="modal">
+                    close
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>
